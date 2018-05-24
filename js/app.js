@@ -1,15 +1,17 @@
 document.getElementById("output").style.visibility = "hidden";
 
-document.getElementById("lbsInput").addEventListener("input",function(e){
+document.getElementById("kgsInput").addEventListener("input",function(e){
   document.getElementById("output").style.visibility = "visible";
 
-  let lbs = e.target.value;
+  let kgs = e.target.value;
 
-  document.getElementById("gramsOutput").innerHTML = (lbs/0.0022046).toFixed(2);
+  document.getElementById("gramsOutput").innerHTML = (kgs * 1000).toFixed(2);
 
-  document.getElementById("kgOutput").innerHTML = (lbs/2.2046).toFixed(2);
+  document.getElementById("lbsOutput").innerHTML = (kgs * 2.20462).toFixed(2);
 
-  document.getElementById("ozOutput").innerHTML = (lbs*16).toFixed(2);
+  document.getElementById("ozOutput").innerHTML = (kgs * 35.274).toFixed(2);
+
+  document.getElementById("stOutput").innerHTML = kgs * 0.1574730444;
 
 })
 
