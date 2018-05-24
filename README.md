@@ -1,1 +1,1 @@
-My first JS app published on GitHub.
+My first JS app published on GitHub using the DOM.
