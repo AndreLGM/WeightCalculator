@@ -1,2 +1,1 @@
-#WeightCalculator
-This is my first JS app published on GitHub.
+My first JS app published on GitHub.
